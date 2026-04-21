@@ -15,7 +15,7 @@
  read -p "Give user name : " username
 
 # Show given suername
- echo " User name taken as $suername"
+ echo " User name taken as $username"
 
 # Adding user as per the name is given
 
