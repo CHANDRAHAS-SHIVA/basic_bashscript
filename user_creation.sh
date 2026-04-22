@@ -10,9 +10,17 @@
 #
 
 
-# User input as user name and save it in suername variable
+# User input as user name and save it in username variable loop it untill break
 
- read -p "Give user name : " username
+ while true
+do
+        read -p " (or type exit): " username
+
+    # Exit condition
+    if [[ "$username" == "exit" ]]; then
+        echo "Exiting..."
+        break
+    fi
 
 # Show given suername
  echo " User name taken as $username"
@@ -47,5 +55,5 @@
 
 id $username
 
-groups $username
+donegroups $username
                                                                       1,1           Top
