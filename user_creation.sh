@@ -8,7 +8,7 @@
 # ############################
 #
 #
-
+COMMON_PASSWORD="Oggleather123!@"
 
 # User input as user name and save it in username variable loop it untill break
 
@@ -31,8 +31,9 @@ do
 
  echo "user created sucessfully"
 
- sudo passwd $username
-
+ # Set same password for all users
+ echo "$username:$COMMON_PASS" | sudo chpasswd
+    
  sudo chage -d 0 $username
 
  # Verify user
