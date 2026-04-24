@@ -55,5 +55,7 @@ do
 
 id $username
 
-donegroups $username
+groups $username
+
+done
                                                                       1,1           Top
